@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title>Clase Angular</title>
+    <script type="text/javascript" src="js/angular.min.js">  </script>
+
+  </head>
+  <body>
+
+<div>
+
+<!--
+    <h4>Filtros de angular</h4>
+    <span>DOnaldO</span>
+    <span>{{"DoNaldO" | lowercase}}</span>
+
+    <span>{{"DoNaldO" | uppercase}}</span><br><br>
+    <span>1350</span><br>
+    <span>{{1350 |currency}}</span><br>
+
+    <span>{{1350125546 |number}}</span><br>
+-->
+
+<h4>ng-model en Angula</h4>
+
+<p>
+  <label>Dime tu nombre</label>
+  <input type="text" ng-model="nombre" placeholder="nombre"><!--ng-model es para asociar variables-->
+</p>
+
+  <label>Tu nombre es:</label>
+  {{nombre|uppercase}}
+
+  <p>
+    <label>Seleccionar Pais:</label>
+    <select ng-model="pais">
+      <option value="México">México</option>
+      <option value="Francia">Francia</option>
+      <option value="Alemania">Alemania</option>
+    </select>
+  </p>
+  <label>tu país es: </label>{{pais}}
+  
+  <p><br>
+    <label>Seleccione género:</label>
+    <input type="radio" value="M" ng-model="genero"> femenino
+    <input type="radio" value="F" ng-model="genero"> masculino
+    <br>
+  </p>
+  <label>tu género es: </label>{{genero}}
+
+<p>
+<label>Cuál o cuáles son tus pasatiempos?</label>
+<input type="checkbox" ng-model="opcion1">patinar
+<input type="checkbox" ng-model="opcion2">leer
+<br>
+<label>a ti te gusta:</label>
+<br>{{opcion1}}
+<br>{{opcion2}}
+</p>
+
+</div>
+
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

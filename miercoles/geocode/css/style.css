@@ -1,0 +1,17 @@
+html, body{
+  height: 100%;
+  margin: 0px;
+}
+.img-fondo{
+  min-width:  100%;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/im1.jpg");
+}
+.tra{
+  opacity: 0.9;
+}
+.tra2{
+  background-color: blue;
+}

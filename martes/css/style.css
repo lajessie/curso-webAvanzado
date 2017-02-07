@@ -1,0 +1,21 @@
+.circulo{
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  border-radius: 50px;
+}
+
+/*#cuadrado{
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}*/
+
+.circulo2{
+  background-color: blue;
+}
+/*
+ (.) ---> clase / para varios elementos
+ (#) ---> id /para solo un elemento
+
+*/
